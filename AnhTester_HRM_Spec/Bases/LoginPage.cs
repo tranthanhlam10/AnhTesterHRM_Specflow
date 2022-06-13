@@ -1,11 +1,18 @@
-﻿using System;
-using System.Threading;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace AnhTester_HRM_Spec.Bases
 {
     class LoginPage : BasePage
     {
+        private static LoginPage instance;
+        private LoginPage() { }
+        public static LoginPage GetInstance()
+        {
+            if(instance == null)
+                instance = new LoginPage();
+            return instance;
+        }
+
         //Get locator for Login testing
         By txtUserName = By.XPath("//input[@id='iusername']");
         By txtPassWord = By.XPath("//input[@id='ipassword']");
@@ -14,8 +21,6 @@ namespace AnhTester_HRM_Spec.Bases
         public void InputUsernameAndPassword(string username, string password)
         {
             driver.Navigate().GoToUrl("https://hrm.anhtester.com/erp/login");
-            Thread.Sleep(3000);
-            Console.WriteLine("Lam");
             driver.FindElement(txtUserName).SendKeys(username);
             driver.FindElement(txtPassWord).SendKeys(password);     
         }
@@ -26,10 +31,8 @@ namespace AnhTester_HRM_Spec.Bases
         }
 
         public string SeeTheHomepageOfHRM()
-        {
-            Thread.Sleep(5000);
-            return driver.Url;
-            //driver.Quit();
+        {           
+            return driver.Url;    
         }
     }
 }

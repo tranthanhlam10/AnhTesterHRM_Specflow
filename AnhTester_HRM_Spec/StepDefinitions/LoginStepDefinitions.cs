@@ -6,7 +6,7 @@ namespace AnhTester_HRM_Spec.StepDefinitions
     [Binding]
     public class LoginStepDefinitions
     {
-        LoginPage loginPage = new LoginPage();
+        
         BasePage basePage = new BasePage();
 
         [Given(@"I have set up and navigated to HRM Website")]
@@ -18,20 +18,20 @@ namespace AnhTester_HRM_Spec.StepDefinitions
         [Given(@"I typed (.*) and (.*)")]
         public void GivenITypedAdminAnd(string username, string password)
         {
-            loginPage.InputUsernameAndPassword(username, password);
+            LoginPage.GetInstance().InputUsernameAndPassword(username, password);
         }
 
         [When(@"I click login button")]
         public void WhenIClickLoginButton()
         {
-            loginPage.ClickTheLoginButton();
+            LoginPage.GetInstance().ClickTheLoginButton();
         }
 
         [Then(@"I must see HRM system")]
         public void ThenIMustSeeHRMSystem()
         {
-            //loginPage.SeeTheHomepageOfHRM();
-            Assert.AreEqual("https://hrm.anhtester.com/erp/desk", loginPage.SeeTheHomepageOfHRM());
+            Assert.AreEqual("https://hrm.anhtester.com/erp/login", LoginPage.GetInstance().SeeTheHomepageOfHRM());
+            basePage.tearDown();
         }
     }
 }

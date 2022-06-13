@@ -75,13 +75,13 @@ namespace AnhTester_HRM_Spec.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Login Test")]
-        [NUnit.Framework.CategoryAttribute("Retry")]
+        [NUnit.Framework.CategoryAttribute("retry(2)")]
         [NUnit.Framework.CategoryAttribute("tag1")]
         [NUnit.Framework.TestCaseAttribute("admin01", "123456", null)]
         public virtual void LoginTest(string username, string password, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "Retry",
+                    "retry(2)",
                     "tag1"};
             if ((exampleTags != null))
             {

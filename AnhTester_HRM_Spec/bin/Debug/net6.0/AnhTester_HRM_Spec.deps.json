@@ -22,6 +22,7 @@
           "SpecFlow.Plus.LivingDocPlugin": "3.9.57",
           "SpecFlow.Tools.MsBuild.Generation": "3.9.40",
           "WebDriverManager": "2.13.0",
+          "nRetry.SpecFlowPlugin": "1.0.0",
           "NUnit": "3.13.2"
         },
         "runtime": {
@@ -489,6 +490,17 @@
           }
         }
       },
+      "nRetry.SpecFlowPlugin/1.0.0": {
+        "dependencies": {
+          "SpecFlow.CustomPlugin": "3.4.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/nRetry.SpecFlowPlugin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "NuGet.Frameworks/5.11.0": {
         "runtime": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
@@ -600,6 +612,33 @@
           }
         }
       },
+      "SpecFlow.CustomPlugin/3.4.8": {
+        "dependencies": {
+          "SpecFlow": "3.9.74",
+          "System.CodeDom": "4.4.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Security.Principal": "4.3.0",
+          "System.Threading.Tasks.Dataflow": "4.9.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/TechTalk.SpecFlow.Generator.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.8.29391"
+          },
+          "lib/netstandard2.0/TechTalk.SpecFlow.Parser.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.8.29391"
+          },
+          "lib/netstandard2.0/TechTalk.SpecFlow.Utils.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.8.29391"
+          }
+        }
+      },
       "SpecFlow.Internal.Json/1.0.8": {
         "runtime": {
           "lib/netstandard2.0/SpecFlow.Internal.Json.dll": {
@@ -649,6 +688,14 @@
         }
       },
       "System.Buffers/4.5.1": {},
+      "System.CodeDom/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -1129,6 +1176,11 @@
           }
         }
       },
+      "System.Security.Principal/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
       "System.Security.Principal.Windows/5.0.0": {},
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
@@ -1166,6 +1218,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Threading.Tasks.Dataflow/4.9.0": {},
       "WebDriverManager/2.13.0": {
         "dependencies": {
           "AngleSharp": "0.16.1",
@@ -1355,6 +1408,13 @@
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
+    "nRetry.SpecFlowPlugin/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NZt9O8gFc6IRv4xQabD58Ih7vaegh7c8FKNEyJBuOWoRLi/hbw7pOCz2WhyqGsL2Josq//NJiRnnRPxlfAcLRQ==",
+      "path": "nretry.specflowplugin/1.0.0",
+      "hashPath": "nretry.specflowplugin.1.0.0.nupkg.sha512"
+    },
     "NuGet.Frameworks/5.11.0": {
       "type": "package",
       "serviceable": true,
@@ -1523,6 +1583,13 @@
       "path": "specflow/3.9.74",
       "hashPath": "specflow.3.9.74.nupkg.sha512"
     },
+    "SpecFlow.CustomPlugin/3.4.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-44c/ZrngW76m6+ez3zRRgvSmMBweOXmVq3DfCY+XG/kiUp0aTCKrIzUUsDPiKTU8Nh8X4q9b1PA1NLY39tV3Sw==",
+      "path": "specflow.customplugin/3.4.8",
+      "hashPath": "specflow.customplugin.3.4.8.nupkg.sha512"
+    },
     "SpecFlow.Internal.Json/1.0.8": {
       "type": "package",
       "serviceable": true,
@@ -1564,6 +1631,13 @@
       "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "path": "system.buffers/4.5.1",
       "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.CodeDom/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
+      "path": "system.codedom/4.4.0",
+      "hashPath": "system.codedom.4.4.0.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -1880,6 +1954,13 @@
       "path": "system.security.permissions/4.5.0",
       "hashPath": "system.security.permissions.4.5.0.nupkg.sha512"
     },
+    "System.Security.Principal/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
+      "path": "system.security.principal/4.3.0",
+      "hashPath": "system.security.principal.4.3.0.nupkg.sha512"
+    },
     "System.Security.Principal.Windows/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1928,6 +2009,13 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Dataflow/4.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dTS+3D/GtG2/Pvc3E5YzVvAa7aQJgLDlZDIzukMOJjYudVOQOUXEU68y6Zi3Nn/jqIeB5kOCwrGbQFAKHVzXEQ==",
+      "path": "system.threading.tasks.dataflow/4.9.0",
+      "hashPath": "system.threading.tasks.dataflow.4.9.0.nupkg.sha512"
     },
     "WebDriverManager/2.13.0": {
       "type": "package",

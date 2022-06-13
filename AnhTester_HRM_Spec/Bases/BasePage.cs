@@ -1,45 +1,34 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Edge;
-using WebDriverManager;
-using WebDriverManager.DriverConfigs.Impl;
 using Microsoft.Extensions.Configuration;
 using AnhTester_HRM_Spec.Support;
+using AnhTester_HRM_Spec.DriverManage;
 
 namespace AnhTester_HRM_Spec.Bases
 {
-    class BasePage
+    public class BasePage
     {
         public static IWebDriver driver;
-
-        Config config = new Config();
+        public static Config config;
+        
         public void SetupBrowser()
         {
+            // read file config json
+            config = new Config();
             ConfigurationBuilder builder = new ConfigurationBuilder();
-            builder.AddJsonFile("C:/Specflow/AnhTester_HRM_Spec/AnhTester_HRM_Spec/Support/Config.json");
+            builder.AddJsonFile("Support/Config.json");
             IConfigurationRoot configuration = builder.Build();
             configuration.Bind(config);
-            Thread.Sleep(1000);
-            
-            switch (config.env)
-            {
-                case "chrome":
-                    new DriverManager().SetUpDriver(new ChromeConfig());
-                    driver = new ChromeDriver();
-                    driver.Manage().Window.Maximize();
-                    driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(20);
-                    break;
-                case "edge":
-                    new DriverManager().SetUpDriver(new EdgeConfig());
-                    driver = new EdgeDriver();
-                    driver.Manage().Window.Maximize();
-                    driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(20);
-                    break;
-            }
+
+            // setup driver
+            driver = BDriverFactory.InitDriver(config.env);
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5000);
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(20);
         }
 
         public void tearDown()
         {
+            Console.WriteLine(config.os);
             driver.Quit();
         }
     }

@@ -10,6 +10,7 @@ C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\nunit.engine.
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\nunit.engine.api.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\nunit.engine.core.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\testcentric.engine.metadata.dll
+C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\Support\Config.json
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\AnhTester_HRM_Spec.deps.json
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\AnhTester_HRM_Spec.runtimeconfig.json
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\AnhTester_HRM_Spec.dll
@@ -37,13 +38,18 @@ C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\Microsoft.Tes
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\nRetry.SpecFlowPlugin.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\NuGet.Frameworks.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\nunit.framework.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\WebDriver.Support.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\WebDriver.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\ICSharpCode.SharpZipLib.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\TechTalk.SpecFlow.dll
+C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\TechTalk.SpecFlow.Generator.dll
+C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\TechTalk.SpecFlow.Parser.dll
+C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\TechTalk.SpecFlow.Utils.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\SpecFlow.Internal.Json.dll
+C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\System.CodeDom.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Specflow\AnhTester_HRM_Spec\AnhTester_HRM_Spec\bin\Debug\net6.0\System.Security.Permissions.dll
